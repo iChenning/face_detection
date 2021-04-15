@@ -4,5 +4,5 @@ results_val-test
 widerface_evaluate/dogcat_txt
 widerface_evaluate/focus_txt
 widerface_evaluate/widerface_txt
-data/widerface
-data_list
+/data/widerface/
+/data_list/

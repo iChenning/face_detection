@@ -85,7 +85,7 @@ def main(args):
             # print info
             load_t1 = time.time()
             batch_time = load_t1 - load_t0
-            eta = int(batch_time * (len(dataloader) * args.max_epoch - i_iter))
+            eta = int(batch_time * (len(dataloader) * (args.max_epoch - i_epoch) - i_iter))
             logger.info('Epoch:{}/{} || Iter: {}/{} || '
                         'Loc: {:.4f} Cla: {:.4f} Landm: {:.4f} || '
                         'LR: {:.8f} || '
@@ -105,8 +105,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Retinaface Training')
     parser.add_argument('--txt_path', type=str, default='data_list/train_widerface_list.txt')
     parser.add_argument('--txt_path2', type=str, default=None)
-    parser.add_argument('--bs', type=int, default=32)
-    parser.add_argument('--img_size', type=int, default=480)
+    parser.add_argument('--bs', type=int, default=64)
+    parser.add_argument('--img_size', type=int, default=640)
     parser.add_argument('--num_workers', type=int, default=8)
 
     parser.add_argument('--warm_epoch', type=int, default=5)

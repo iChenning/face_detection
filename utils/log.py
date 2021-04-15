@@ -19,4 +19,5 @@ def logger_init(folder_dir):
     file_handler.setLevel(level=logging.INFO)
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
+    logger.propagate = 0
     return logger

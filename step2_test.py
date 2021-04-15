@@ -208,11 +208,11 @@ def run(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Retinaface')
-    parser.add_argument('--trained_model', type=str, default='./results_train/21-04-14-18-32-21/mobile0.25_150.pth')
-    parser.add_argument('--test_list_dir', type=str, default='./data_list/valid_widerface_list.txt')
-    parser.add_argument('--save_folder', type=str, default='./results_val-test/widerface')
-    # parser.add_argument('--test_list_dir', type=str, default='./data_list/test_san-480_list.txt')
-    # parser.add_argument('--save_folder', type=str, default='./results_val-test/san-480')
+    parser.add_argument('--trained_model', type=str, default='./results_train/21-04-14-13-40-22/mobile0.25_70.pth')
+    # parser.add_argument('--test_list_dir', type=str, default='./data_list/valid_widerface_list.txt')
+    # parser.add_argument('--save_folder', type=str, default='./results_val-test/widerface')
+    parser.add_argument('--test_list_dir', type=str, default='./data_list/test_san-480_list.txt')
+    parser.add_argument('--save_folder', type=str, default='./results_val-test/san-480')
     parser.add_argument('--save_image_all', default=True)
 
     parser.add_argument('--network', default='mobile0.25', help='Backbone network mobile0.25 or resnet50')
