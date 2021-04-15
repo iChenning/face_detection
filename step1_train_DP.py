@@ -19,6 +19,7 @@ from utils.lr_mul import WarmupCosineSchedule
 from utils.log import logger_init
 from utils.config import cfg_mnet
 
+
 cudnn.benchmark = True
 
 
